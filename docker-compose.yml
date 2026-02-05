@@ -5,7 +5,7 @@ services:
     image: onlyoffice/documentserver #[-de,-ee]
     container_name: onlyoffice-documentserver
     depends_on:
-      - onlyoffice-postgresql
+      - onlyoffice-postgresq
       - onlyoffice-rabbitmq
     environment:
       - DB_TYPE=postgres
