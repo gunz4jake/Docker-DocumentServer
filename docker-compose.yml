@@ -9,7 +9,7 @@ services:
       - onlyoffice-rabbitmq
     environment:
       - DB_TYPE=postgres
-      - DB_HOST=onlyoffice-postgresql
+      - DB_HOST=onlyoffice-postgresq
       - DB_PORT=5432
       - DB_NAME=onlyoffice
       - DB_USER=onlyoffice
@@ -52,7 +52,7 @@ services:
       timeout: 10s
 
   onlyoffice-postgresql:
-    container_name: onlyoffice-postgresql
+    container_name: onlyoffice-postgresq
     image: postgres:15
     environment:
       - POSTGRES_DB=onlyoffice
